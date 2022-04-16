@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<script type="text/javascript">
+<!--
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'buttonC.gif',/*url*/'buttonD.gif',/*url*/'button1E.gif',/*url*/'button1F.gif',/*url*/'button21.gif',/*url*/'button22.gif',/*url*/'button24.gif',/*url*/'button25.gif',/*url*/'button27.gif',/*url*/'button28.gif')" style="background-image: url('ezgif.com-gif-maker.png')">
+
+<table style="width: 11%; height: 348px">
+	<tr>
+		<td><a href="main.html">
+		<img id="img1" alt="main page" height="40" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'buttonD.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'buttonB.gif')" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'buttonC.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'buttonC.gif')" src="buttonB.gif" style="border: 0" width="200" /><!-- MSComment="ibutton" fp-style="fp-btn: Brick Column 5; fp-transparent: 1" fp-title="main page" --></a></td>
+	</tr>
+	<tr>
+		<td><a href="contacts.html">
+		<img id="img6" alt="contact me" height="40" onmousedown="FP_swapImg(1,0,/*id*/'img6',/*url*/'button1F.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img6',/*url*/'button1D.gif')" onmouseover="FP_swapImg(1,0,/*id*/'img6',/*url*/'button1E.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img6',/*url*/'button1E.gif')" src="button1D.gif" style="border: 0" width="200" /><!-- MSComment="ibutton" fp-style="fp-btn: Brick Column 5; fp-transparent: 1" fp-title="contact me" --></a></td>
+	</tr>
+	<tr>
+		<td>
+		<img id="img7" alt="my interests" height="40" onmousedown="FP_swapImg(1,0,/*id*/'img7',/*url*/'button22.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img7',/*url*/'button20.gif')" onmouseover="FP_swapImg(1,0,/*id*/'img7',/*url*/'button21.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img7',/*url*/'button21.gif')" src="button20.gif" style="border: 0" width="200" /><!-- MSComment="ibutton" fp-style="fp-btn: Brick Column 5; fp-transparent: 1" fp-title="my interests" --></td>
+	</tr>
+	<tr>
+		<td>
+		<img id="img8" alt="COMING SOON" height="40" onmousedown="FP_swapImg(1,0,/*id*/'img8',/*url*/'button25.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img8',/*url*/'button23.gif')" onmouseover="FP_swapImg(1,0,/*id*/'img8',/*url*/'button24.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img8',/*url*/'button24.gif')" src="button23.gif" style="border: 0" width="200" /><!-- MSComment="ibutton" fp-style="fp-btn: Brick Column 5; fp-transparent: 1" fp-title="COMING SOON" --></td>
+	</tr>
+	<tr>
+		<td>
+		<img id="img9" alt="COMING SOON" height="40" onmousedown="FP_swapImg(1,0,/*id*/'img9',/*url*/'button28.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img9',/*url*/'button26.gif')" onmouseover="FP_swapImg(1,0,/*id*/'img9',/*url*/'button27.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img9',/*url*/'button27.gif')" src="button26.gif" style="border: 0" width="200" /><!-- MSComment="ibutton" fp-style="fp-btn: Brick Column 5; fp-transparent: 1" fp-title="COMING SOON" --></td>
+	</tr>
+</table>
+
+</body>
+
+</html>
